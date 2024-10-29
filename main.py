@@ -74,8 +74,11 @@ decrypted_message = decrypt_message(encrypted_message, symmetric_key_bob)
 print("Original Message from Alice:", message.decode())
 print("Decrypted Message by Bob:", decrypted_message.decode())
 print("")
+
 message = b"Understood, see you there!"
+
 encrypted_message = encrypt_message(message, symmetric_key_bob)
 decrypted_message = decrypt_message(encrypted_message, symmetric_key_alice)
+
 print("Reply Message from Bob", message.decode())
 print("Decrypted Message by Alice:", decrypted_message.decode())
